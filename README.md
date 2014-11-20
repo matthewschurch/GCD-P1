@@ -33,4 +33,24 @@ The relevent data files from the above sources should be placed in a directory c
 run_analysis.R can be directly sourced from R
 > source ("./run_analysis.R")
 
+### Reduction Steps:
+
+1. Reads the pre reduced data into R.  These contain the data and descriptions of the columns and activities, specifically the following files:
+  UCI HAR Dataset/test/X_test.txt
+  UCI HAR Dataset/test/y_test.txt
+  UCI HAR Dataset/test/subject_test.txt
+  UCI HAR Dataset/train/X_train.txt
+  UCI HAR Dataset/train/y_train.txt
+  UCI HAR Dataset/train/subject_train.txt
+  UCI HAR Dataset/features.txt
+  UCI HAR Dataset/activity_labels.txt
+
+2. Edit the column names of all files and make a selection in the primary data table of those columns containing data pertaining to a mean or standard deviation.
+3. Combine the testing and training data sets into one common table called data.  Remove old data frames to free up memory.
+4. Edit the activity column so that it is human readable.
+5. Reorder the data table and change the Subject and Activity columns to factor labels.  Write the data to file called "Data.txt)
+6. Caluculate the means of each column based on each subject and activity.
+7. Columns names are cleaned up due to the aggregate command used.
+8. Final tidy data frame is written to file named "Data_means.txt"
+
 Enjoy!
