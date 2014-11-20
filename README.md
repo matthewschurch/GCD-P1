@@ -36,14 +36,14 @@ run_analysis.R can be directly sourced from R
 ### Reduction Steps:
 
 1. Reads the pre reduced data into R.  These contain the data and descriptions of the columns and activities, specifically the following files:
-+ UCI HAR Dataset/test/X_test.txt
-+ UCI HAR Dataset/test/y_test.txt
-+ UCI HAR Dataset/test/subject_test.txt
-+ UCI HAR Dataset/train/X_train.txt
-+ UCI HAR Dataset/train/y_train.txt
-+ UCI HAR Dataset/train/subject_train.txt
-+ UCI HAR Dataset/features.txt
-+ UCI HAR Dataset/activity_labels.txt
+  + UCI HAR Dataset/test/X_test.txt
+  + UCI HAR Dataset/test/y_test.txt
+  + UCI HAR Dataset/test/subject_test.txt
+  + UCI HAR Dataset/train/X_train.txt
+  + UCI HAR Dataset/train/y_train.txt
+  + UCI HAR Dataset/train/subject_train.txt
+  + UCI HAR Dataset/features.txt
+  + UCI HAR Dataset/activity_labels.txt
 
 2. Edit the column names of all files and make a selection in the primary data table of those columns containing data pertaining to a mean or standard deviation.
 3. Combine the testing and training data sets into one common table called data.  Remove old data frames to free up memory.
