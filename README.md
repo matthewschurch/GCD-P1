@@ -21,3 +21,16 @@ You should create one R script called run_analysis.R that does the following.
 Good luck!
 
 ## run_analysis.R
+This script performs the required data reduction detailed above.  In particular it produces the two tidy data sets
+* Data.txt
+* Data_mean.txt
+
+The relevent data files from the above sources should be placed in a directory called in "UCI HAR Dataset".  This should be at the same level as the script run_analysis.R
+
+./run_analysis.R
+./UCI HAR Dataset/
+
+run_analysis.R can be directly sourced from R
+> source ("./run_analysis.R")
+
+Enjoy!
